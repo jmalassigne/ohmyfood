@@ -1,0 +1,37 @@
+.main {
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__bloc {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+}
+
+.cards__bloc-card {
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.soon {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background: $primary-color;
+    color: $font-color;
+    font-size: 20px;
+}
+    
