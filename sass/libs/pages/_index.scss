@@ -13,7 +13,82 @@
 .cards__bloc-card {
     width: 500px;
     height: 600px;
-    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba( 0, 0, 0, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .note {
+        font-size: 60px;
+        background: linear-gradient(0.25turn, #f15861, #f78f6a);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.card {
+    &-one {
+        background: map-get($card-color, card1);
+        &__name{
+            color: map-get($card-h2-color, card1);
+            font-family: 'Caveat', cursive;
+            font-size: 40px;
+        }
+        &__menu {
+            color: map-get($card-h3-color, card1);
+            font-family: 'Itim', cursive;
+            text-transform: uppercase;
+            font-size: 70px;
+        }
+    }
+    &-two {
+        background: map-get($card-color, card2);
+        &__name {
+            background: map-get($card-h2-color, card2);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Abhaya Libre', serif;
+            font-size: 45px;
+        }
+        &__menu {
+            color: map-get($card-h3-color, card2);
+            font-family: 'Playfair Display', serif;
+            font-size: 70px;
+        }
+    }
+    &-three {
+        background: map-get($card-color, card3);
+        &__name {
+            background: map-get($card-h2-color, card3);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Dancing Script', cursive;
+            font-size: 40px;
+            padding: 0 5px;
+        }
+        &__menu {
+            color: map-get($card-h3-color, card3);
+            font-family: 'Itim', cursive;
+            font-size: 70px;
+        }
+    }
+    &-four {
+        background: map-get($card-color, card4);
+        &__name {
+            background: map-get($card-h2-color, card4);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 40px;
+            padding: 0 5px;
+        }
+        &__menu {
+            color: map-get($card-h3-color, card4);
+            font-family: 'Itim', cursive;
+            font-size: 70px;
+        }
+    }
+
 }
 
 .soon {
@@ -30,7 +105,7 @@
     font-weight: 400;
     transition: box-shadow .3s;
     &:hover {
-        box-shadow: 0px 0px 5px black;
+        box-shadow: 0px 0px 3px black;
     }
     &__dot {
         height: 100%;
@@ -45,6 +120,7 @@
         width: 3px;
         height: 3px;
         background-color: $font-color;
+        border-radius: 1px;
     }
     &:hover .dot-one {
         animation: dot 1000ms infinite;
