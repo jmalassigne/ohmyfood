@@ -1,0 +1,66 @@
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.note {
+    background: linear-gradient(0.25turn, #f15861, #f78f6a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sheet {
+    @include card-shadow;
+    width: 900px;
+    margin: 20px auto;
+    padding: 50px;
+    background: map-get($card-color, card1);
+    font-family: 'Kalam', cursive;
+    color: map-get($card-h2-color, card1);
+    font-weight: 300;
+    &__header {
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Caveat', cursive;
+        .note {
+            font-size: 60px;
+        }
+    }
+    &__section {
+        margin-top: 100px;
+        h4 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        .underline {
+            border-bottom: 2px solid transparent;
+            transition: all 1500ms;
+            &:hover {
+                border-color: inherit;
+            }
+        }
+        li {
+            line-height: 40px;
+        }
+        .float {
+            float: right;
+            font-weight: 700;
+        }
+        &:last-of-type {
+            margin-bottom: 100px;
+        }
+    }
+    &__footer {
+        text-align: center;
+        h3 {
+            display: inline;
+            font-size: 30px;
+        }
+        .note{
+            font-size: 40px;
+        }
+    }
+}
