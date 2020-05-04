@@ -9,15 +9,13 @@ h2 {
     width: 900px;
     margin: 20px auto;
     padding: 120px;
-    background: map-get($card-color, card2);
-    font-family: 'Abhaya Libre', serif;
-    font-weight: 400;
+    background: map-get($card-color, card4);
+    font-family: 'Kaushan Script', cursive;
     font-size: 20px;
     &__header {
         text-align: center;
-        font-size: 40px;
-        font-weight: 700;
-        background: map-get($card-h2-color, card2);
+        font-size: 90px;
+        background: map-get($card-h2-color, card4);
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -45,15 +43,6 @@ h2 {
         }
         &:last-of-type {
             margin-bottom: 100px;
-        }
-        &-one {
-            color: #c67412;
-        }
-        &-two {
-            color: #a56799;
-        }
-        &-three {
-            color: #6e4ccc;
         }
     }
 }
