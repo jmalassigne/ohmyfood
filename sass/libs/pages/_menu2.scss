@@ -1,0 +1,59 @@
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.sheet {
+    @include card-shadow;
+    width: 900px;
+    margin: 20px auto;
+    padding: 120px;
+    background: map-get($card-color, card2);
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 400;
+    font-size: 20px;
+    &__header {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        background: map-get($card-h2-color, card2);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__section {
+        margin-top: 100px;
+        h4 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .underline {
+            border-bottom: 2px solid transparent;
+            transition: all 1500ms;
+            &:hover {
+                border-color: inherit;
+            }
+        }
+        li {
+            line-height: 50px;
+        }
+        .float {
+            float: right;
+            font-size: 25px;
+        }
+        &:last-of-type {
+            margin-bottom: 100px;
+        }
+        &-one {
+            color: #c67412;
+        }
+        &-two {
+            color: #a56799;
+        }
+        &-three {
+            color: #6e4ccc;
+        }
+    }
+}
