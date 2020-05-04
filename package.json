@@ -8,7 +8,7 @@
     "url": "git+https://github.com/jmalassigne/ohmyfood.git"
   },
   "scripts": {
-    "sass": "sass --watch ./sass/index.scss:./css/index.css ./sass/mentions.scss:./css/mentions.css ./sass/menu1.scss:./css/menu1.css --style compressed"
+    "sass": "sass --watch ./sass/index.scss:./css/index.css ./sass/mentions.scss:./css/mentions.css ./sass/menu1.scss:./css/menu1.css ./sass/menu2.scss:./css/menu2.css --style compressed"
   },
   "author": "",
   "license": "ISC",
