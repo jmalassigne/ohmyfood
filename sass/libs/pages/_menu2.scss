@@ -6,6 +6,7 @@ h2 {
 
 .sheet {
     @include card-shadow;
+    position: relative;
     width: 900px;
     margin: 20px auto;
     padding: 120px;
@@ -54,6 +55,69 @@ h2 {
         }
         &-three {
             color: #6e4ccc;
+        }
+    }
+}
+
+.sheet__section {
+    &-one h4 {
+        &::before {
+        content: '';
+            background:center left / contain no-repeat url(../img/menu2/line_menu2_left-one.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            left: 40px;
+            
+        }
+        &::after {
+            content: '';
+            background:center right / contain no-repeat url(../img/menu2/line_menu2_right-one.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            right: 40px;
+            
+        }
+    }
+    &-two h4 {
+        &::before {
+        content: '';
+            background:center left / contain no-repeat url(../img/menu2/line_menu2_left-two.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            left: 40px;
+            
+        }
+        &::after {
+            content: '';
+            background:center right / contain no-repeat url(../img/menu2/line_menu2_right-two.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            right: 40px;
+            
+        }
+    }
+    &-three h4 {
+        &::before {
+        content: '';
+            background:center left / contain no-repeat url(../img/menu2/line_menu2_left-three.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            left: 40px;
+            
+        }
+        &::after {
+            content: '';
+            background:center right / contain no-repeat url(../img/menu2/line_menu2_right-three.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            right: 40px;
+            
         }
     }
 }

@@ -6,6 +6,7 @@ h2 {
 
 .sheet {
     @include card-shadow;
+    position: relative;
     width: 900px;
     margin: 20px auto;
     padding: 120px;
@@ -45,6 +46,69 @@ h2 {
         }
         &:last-of-type {
             margin-bottom: 100px;
+        }
+    }
+}
+
+.sheet__section {
+    &-one h4 {
+        &::before {
+        content: '';
+            background:center left / contain no-repeat url(../img/menu3/line_menu3_left-one.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            left: 40px;
+            
+        }
+        &::after {
+            content: '';
+            background:center right / contain no-repeat url(../img/menu3/line_menu3_right-one.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            right:40px;
+            
+        }
+    }
+    &-two h4 {
+        &::before {
+        content: '';
+            background:center left / contain no-repeat url(../img/menu3/line_menu3_left-two.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            left: 40px;
+            
+        }
+        &::after {
+            content: '';
+            background:center right / contain no-repeat url(../img/menu3/line_menu3_right-two.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            right:40px;
+            
+        }
+    }
+    &-three h4 {
+        &::before {
+        content: '';
+            background:center left / contain no-repeat url(../img/menu3/line_menu3_left-three.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            left: 40px;
+            
+        }
+        &::after {
+            content: '';
+            background:center right / contain no-repeat url(../img/menu3/line_menu3_right-three.png);
+            width: 30%;
+            height: 32px;
+            position: absolute;
+            right:40px;
+            
         }
     }
 }

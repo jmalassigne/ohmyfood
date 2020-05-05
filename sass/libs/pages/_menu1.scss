@@ -12,13 +12,15 @@ h2 {
 
 .sheet {
     @include card-shadow;
+    position: relative;
     width: 900px;
     margin: 20px auto;
-    padding: 50px;
+    padding: 100px;
     background: map-get($card-color, card1);
     font-family: 'Kalam', cursive;
     color: map-get($card-h2-color, card1);
     font-weight: 300;
+    font-size: 20px;
     &__header {
         text-align: center;
         font-size: 30px;
@@ -34,6 +36,22 @@ h2 {
             font-size: 25px;
             font-weight: 400;
             margin-bottom: 30px;
+            &::before {
+                content: '';
+                background: left center / contain no-repeat url(../img/menu1/line_menu1.png);
+                width: 25%;
+                height: 40px;
+                position: absolute;
+                left: 100px;
+            } 
+            &::after {
+                content: '';
+                background: center right / contain no-repeat url(../img/menu1/line_menu1.png);
+                width: 25%;
+                height: 40px;
+                position: absolute;
+                right: 100px;
+            }
         }
         .underline {
             border-bottom: 2px solid transparent;

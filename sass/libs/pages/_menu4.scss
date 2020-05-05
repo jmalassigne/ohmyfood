@@ -6,6 +6,7 @@ h2 {
 
 .sheet {
     @include card-shadow;
+    position: relative;
     width: 900px;
     margin: 20px auto;
     padding: 120px;
@@ -43,6 +44,27 @@ h2 {
         }
         &:last-of-type {
             margin-bottom: 100px;
+        }
+    }
+}
+
+.sheet__section {
+         h4 {
+        &::before {
+            content: '';
+            background: center left / contain no-repeat url(../img/menu4/line_menu4_left.png);
+            position: absolute;
+            left: 50px;
+            width: 30%;
+            height: 40px;
+        }
+        &::after {
+            content: '';
+            background: center right / contain no-repeat url(../img/menu4/line_menu4_right.png);
+            position: absolute;
+            right: 50px;
+            width: 30%;
+            height: 40px;
         }
     }
 }
