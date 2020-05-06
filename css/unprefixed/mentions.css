@@ -1,1 +1,22 @@
-@keyframes wiggle{0%{transform:translateX(-3px)}20%{transform:translateX(3px)}40%{transform:translateX(-3px)}60%{transform:translateX(3px)}80%{transform:translateX(-3px)}100%{transform:translateX(3px)}}@keyframes dot{0%{height:3px}50%{height:8px}100%{height:3px}}/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}body{font-family:"Heebo",sans-serif}a{color:inherit;text-decoration:none;transition:color .3s;padding:2px 2px;border-radius:5px;transition:color .3s}a:hover{color:#f4b203}.header{width:100%;height:100px;display:flex;justify-content:center;align-items:center;box-shadow:0px 3px 7px rgba(0,0,0,.5);background:#579c87}.header__logo{color:#fdcb46;font-size:40px;font-weight:600;letter-spacing:-1px}.header__logo:hover{text-shadow:1px 0px 5px rgba(0,0,0,.5)}.main{width:100%;padding:50px;margin-bottom:50px}.footer{height:50px;position:fixed;left:0;bottom:0;right:0;width:100%;background:#579c87;color:#fdcb46;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #95c4b6;box-shadow:0px -3px 7px rgba(0,0,0,.5)}.footer__btn{margin:0 50px}.footer__btn:hover{animation:wiggle .3s cubic-bezier(0.89, -0.36, 0.39, 1.29)}/*# sourceMappingURL=mentions.css.map */
+/* Error: Undefined mixin.
+ *    ,
+ * 65 | / @include sm-xs {
+ * 66 | |     .footer__btn {
+ * 67 | |         margin: 0 20px;
+ * 68 | |         font-size: 10px;
+ * 69 | |     }
+ * 70 | \ }
+ *    '
+ *   sass/libs/layout/_layout.scss 65:1  @import
+ *   sass/mentions.scss 4:9              root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 65 \2502  \250c  @include sm-xs {\a 66 \2502  \2502      .footer__btn {\a 67 \2502  \2502          margin: 0 20px;\a 68 \2502  \2502          font-size: 10px;\a 69 \2502  \2502      }\a 70 \2502  \2514  }\a    \2575 \a   sass/libs/layout/_layout.scss 65:1  @import\a   sass/mentions.scss 4:9              root stylesheet";
+}

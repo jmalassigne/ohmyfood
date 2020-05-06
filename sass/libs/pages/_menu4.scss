@@ -13,7 +13,7 @@ h2 {
     background: map-get($card-color, card4);
     font-family: 'Kaushan Script', cursive;
     font-size: 20px;
-    &__header {
+    &__header h3 {
         text-align: center;
         font-size: 90px;
         background: map-get($card-h2-color, card4);

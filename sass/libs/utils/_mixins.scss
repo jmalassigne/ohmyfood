@@ -1,3 +1,33 @@
 @mixin card-shadow {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 }
+
+@mixin sm-xs {
+    @media screen and (max-width: $screen-sm-xs) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (max-width: $screen-sm) {
+        @content;
+    }
+}
+
+@mixin md-xs {
+    @media screen and (max-width: $screen-md-xs) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (max-width: $screen-md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (max-width: $screen-lg) {
+        @content;
+    }
+}

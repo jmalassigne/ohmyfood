@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .note {
+    .note i {
         font-size: 60px;
         background: linear-gradient(0.25turn, #f15861, #f78f6a);
         background-clip: text;
@@ -142,5 +142,105 @@
     }
 }
 
+@include lg {
+    .cards__bloc-card {
+        width: 400px;
+        height: 480px;
+    }
+    .card {
+        &-one__name {
+            font-size: 35px;
+        }
+        &-two__name {
+            font-size: 35px;
+        }
+        &-three__name {
+            font-size: 30px;
+        }
+        &-four__name {
+            font-size: 30px;
+        }
+    }
+    h3 {
+        font-size: 40px;
+    }
+}
 
-    
+@include md {
+    .cards__bloc {
+        flex-direction: column;
+        margin-bottom: 0;
+        height: 1750px;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        &-card {
+            width: 100%;
+            height: 800px;
+        }
+    }
+    .card {
+        &-one__name {
+            font-size: 45px;
+        }
+        &-two__name {
+            font-size: 40px;
+        }
+        &-three__name {
+            font-size: 40px;
+        }
+        &-four__name {
+            font-size: 40px;
+        }
+    }
+        h3 {
+            font-size: 70px;
+    }
+}
+
+@include md-xs {
+    .cards__bloc {
+        height: 1350px;
+        &-card {
+            height: 600px;
+        }
+    }
+}
+
+@include sm {
+    .main {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .cards__bloc {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@include sm-xs {
+    .cards__bloc {
+        height: 1050px;
+        &-card {
+            height: 450px;
+        }
+    }
+    .card {
+        &-one__name {
+            font-size: 25px;
+        }
+        &-two__name {
+            font-size: 30px;
+        }
+        &-three__name {
+            font-size: 30px;
+        }
+        &-four__name {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 35px;
+        }
+    }
+}
