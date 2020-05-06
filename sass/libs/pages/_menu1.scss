@@ -38,7 +38,7 @@ h2 {
             margin-bottom: 30px;
             &::before {
                 content: '';
-                background: left center / contain no-repeat url(../img/menu1/line_menu1.png);
+                background: left center / contain no-repeat url(../../img/menu1/line_menu1.png);
                 width: 25%;
                 height: 40px;
                 position: absolute;
@@ -46,7 +46,7 @@ h2 {
             } 
             &::after {
                 content: '';
-                background: center right / contain no-repeat url(../img/menu1/line_menu1.png);
+                background: center right / contain no-repeat url(../../img/menu1/line_menu1.png);
                 width: 25%;
                 height: 40px;
                 position: absolute;

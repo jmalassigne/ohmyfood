@@ -52,7 +52,7 @@ h2 {
          h4 {
         &::before {
             content: '';
-            background: center left / contain no-repeat url(../img/menu4/line_menu4_left.png);
+            background: center left / contain no-repeat url(../../img/menu4/line_menu4_left.png);
             position: absolute;
             left: 50px;
             width: 30%;
@@ -60,7 +60,7 @@ h2 {
         }
         &::after {
             content: '';
-            background: center right / contain no-repeat url(../img/menu4/line_menu4_right.png);
+            background: center right / contain no-repeat url(../../img/menu4/line_menu4_right.png);
             position: absolute;
             right: 50px;
             width: 30%;

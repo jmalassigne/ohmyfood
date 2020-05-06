@@ -63,7 +63,7 @@ h2 {
     &-one h4 {
         &::before {
         content: '';
-            background:center left / contain no-repeat url(../img/menu2/line_menu2_left-one.png);
+            background:center left / contain no-repeat url(../../img/menu2/line_menu2_left-one.png);
             width: 30%;
             height: 32px;
             position: absolute;
@@ -72,7 +72,7 @@ h2 {
         }
         &::after {
             content: '';
-            background:center right / contain no-repeat url(../img/menu2/line_menu2_right-one.png);
+            background:center right / contain no-repeat url(../../img/menu2/line_menu2_right-one.png);
             width: 30%;
             height: 32px;
             position: absolute;
@@ -83,7 +83,7 @@ h2 {
     &-two h4 {
         &::before {
         content: '';
-            background:center left / contain no-repeat url(../img/menu2/line_menu2_left-two.png);
+            background:center left / contain no-repeat url(../../img/menu2/line_menu2_left-two.png);
             width: 30%;
             height: 32px;
             position: absolute;
@@ -92,7 +92,7 @@ h2 {
         }
         &::after {
             content: '';
-            background:center right / contain no-repeat url(../img/menu2/line_menu2_right-two.png);
+            background:center right / contain no-repeat url(../../img/menu2/line_menu2_right-two.png);
             width: 30%;
             height: 32px;
             position: absolute;
@@ -103,7 +103,7 @@ h2 {
     &-three h4 {
         &::before {
         content: '';
-            background:center left / contain no-repeat url(../img/menu2/line_menu2_left-three.png);
+            background:center left / contain no-repeat url(../../img/menu2/line_menu2_left-three.png);
             width: 30%;
             height: 32px;
             position: absolute;
@@ -112,7 +112,7 @@ h2 {
         }
         &::after {
             content: '';
-            background:center right / contain no-repeat url(../img/menu2/line_menu2_right-three.png);
+            background:center right / contain no-repeat url(../../img/menu2/line_menu2_right-three.png);
             width: 30%;
             height: 32px;
             position: absolute;

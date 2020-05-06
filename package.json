@@ -8,13 +8,18 @@
     "url": "git+https://github.com/jmalassigne/ohmyfood.git"
   },
   "scripts": {
-    "sass": "sass --watch ./sass/index.scss:./css/index.css ./sass/mentions.scss:./css/mentions.css ./sass/menu1.scss:./css/menu1.css ./sass/menu2.scss:./css/menu2.css ./sass/menu3.scss:./css/menu3.css ./sass/menu4.scss:./css/menu4.css --style compressed"
+    "sass": "sass --watch ./sass/index.scss:./css/unprefixed/index.css ./sass/mentions.scss:./css/unprefixed/mentions.css ./sass/menu1.scss:./css/unprefixed/menu1.css ./sass/menu2.scss:./css/unprefixed/menu2.css ./sass/menu3.scss:./css/unprefixed/menu3.css ./sass/menu4.scss:./css/unprefixed/menu4.css --style compressed"
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/jmalassigne/ohmyfood/issues"
   },
-  "homepage": "https://github.com/jmalassigne/ohmyfood#readme"
+  "homepage": "https://github.com/jmalassigne/ohmyfood#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0"
+  }
 }
