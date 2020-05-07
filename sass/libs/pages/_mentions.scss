@@ -1,0 +1,15 @@
+.main {
+    width: 100%;
+    text-align: center;
+    font-family: $primary-font;
+    h2 {
+        font-size: 30px;
+    }
+    &__text {
+        margin: 30px auto;
+        width: 500px;
+        text-align: justify;
+        @include card-shadow;
+        padding: 10px;
+    }
+}
