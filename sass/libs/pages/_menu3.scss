@@ -112,3 +112,112 @@ h2 {
         }
     }
 }
+
+@include md {
+    .main {
+        padding: 30px;
+    }
+    .sheet {
+        width: 710px;
+        font-size: 17px;
+        padding: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        &__section {
+            margin-top: 50px;
+            h4 {
+                &::before {
+                    width: 25%;
+                    left: 50px;
+                }
+                &::after {
+                    width: 25%;
+                    right: 50px;
+                }
+            }
+            &:last-of-type {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@include md-xs {
+    .sheet {
+        width: 580px;
+        font-size: 15px;
+        h4 {
+            font-size: 20px;
+        }
+        .float {
+            font-size: 20px;
+        }
+        &__header h3 {
+            font-size: 40px;
+        }
+    }
+}
+
+@include sm {
+    .main {
+        padding: 30px;
+    }
+    .sheet {
+        width: 100%;
+        padding: 30px;
+        font-size: 12px;
+        li {
+            line-height: 30px;
+        }
+        h4 {
+            margin-bottom: 15px;
+            &::before {
+                left: 30px;
+                width: 20%;
+            }
+            &::after {
+                right: 30px;
+                width: 20%;
+            }
+        }
+        .float {
+            font-size: 12px;
+        }
+        &__section {
+            margin-top: 40px;
+        }
+        &__section:last-of-type {
+            margin-bottom: 40px;
+        }
+        &__header h3 {
+            font-size: 25px;
+        }
+    }
+}
+
+@include sm-xs {
+    .main {
+        padding: 10px;
+    }
+    .sheet {
+        font-size: 9px;
+        padding: 30px 10px;
+        h4 {
+            font-size: 15px;
+            &::before {
+                height: 20px;
+                left: 10px;
+            }
+            &::after {
+                height: 20px;
+                right: 10px;
+            }
+        }
+        .float {
+            font-size: 10px;
+        }
+        li {
+            line-height: 20px;
+        }
+    }
+}
