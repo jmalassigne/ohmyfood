@@ -94,7 +94,6 @@
 .card-anim {
     transition: all 200ms;
     &:hover {
-        transform: scale(1.02);
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
         opacity: .6;
     }
