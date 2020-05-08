@@ -30,13 +30,6 @@ h2 {
             font-weight: 700;
             margin-bottom: 30px;
         }
-        .underline {
-            border-bottom: 2px solid transparent;
-            transition: all 1500ms;
-            &:hover {
-                border-color: inherit;
-            }
-        }
         li {
             line-height: 50px;
         }
@@ -120,6 +113,33 @@ h2 {
             
         }
     }
+}
+
+.underline {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 3px;
+        transition: all 300ms ease-out;
+    }
+    &__one::after {
+        background: #c67412;
+    }
+    &__two::after {
+        background: #a56799;
+    }
+    &__three::after {
+        background: #6e4ccc;
+    }
+    
+}
+    
+h4:hover .underline::after{
+    width: 100%;
 }
 
 @include md {

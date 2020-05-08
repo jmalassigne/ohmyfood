@@ -28,13 +28,6 @@ h2 {
             font-weight: 700;
             margin-bottom: 30px;
         }
-        .underline {
-            border-bottom: 2px solid transparent;
-            transition: all 1500ms;
-            &:hover {
-                border-color: inherit;
-            }
-        }
         li {
             line-height: 50px;
         }
@@ -67,6 +60,24 @@ h2 {
             height: 40px;
         }
     }
+}
+
+.underline {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 3px;
+        transition: all 300ms ease-out;
+        background: map-get($card-h2-color , card4);
+    }
+}
+    
+h4:hover .underline::after{
+    width: 100%;
 }
 
 @include md {
